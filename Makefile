@@ -1,7 +1,8 @@
 .PHONY: docs
 init:
-	pip install pipenv --upgrade
-	pipenv install --dev --skip-lock
+	echo "HELLO"
+	pip install pipenv==11.9.0
+	pipenv install --dev --skip-lock --verbose
 test:
 	# This runs all of the tests, on both Python 2 and Python 3.
 	detox
